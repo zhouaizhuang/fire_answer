@@ -31,7 +31,6 @@ input, textarea, img, video, object { width:100%; box-sizing: border-box;}
 .lt2r{letter-spacing:0.02rem;} .lt4r{letter-spacing:0.04rem;}
 .tc{text-align: center;}
 .b{font-weight: 700;} .i{font-style:italic;}
-
 .lh1-5{line-height:1.5;} .lh1-8{line-height:1.8} .lh2{line-height: 2;}
 .op0{opacity: 0;} .op6{opacity: 0.6;} .op10{opacity: 1;}
 /*边框*/
