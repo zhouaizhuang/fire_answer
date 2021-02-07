@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>消防知识答题-首页</title>
+    <meta name="renderer" content="webkit">
+    <meta charset='UTF-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="./js/px2rem.js"></script>
+  </head>
+  <body class='rel h100 ovh'>
+    <!--首页主体内容代码-->
+    <div class='h100 ovya bge69583' id="indexPage">
+      <img src="./imgs/img_01.png" />
+      <div class='startAnswer f ac xc pt20r pb20r'>
+        <img id="answerBtn" class='w40 scaleAnimate' src="./imgs/startAnswer.png">
+      </div>
+      <img src="./imgs/img_03.png" />
+    </div>
+    <!--答题页面-->
+    <div class='h100 ovya bge69583' id="questionPage">
+      <div class='questionBg ovh'>
+        <div style="padding: 0.6rem 0.3rem;">
+          <div class='w40 auto bdbf'>
+            <div class='f xc ac fs40r gf pt20r pb10r'>时间</div>
+            <div class='f xc ac fs40r gf pb10r lt4r b' id="timeBox">20.00</div>
+          </div>
+          <div class='f xc ac pt10r pb40r fs40r'> 
+            <div class='gf3e34a lt2r' id="qsIndex">1</div>
+            <div class='gf lt2r'>/6</div>
+          </div>
+          <div class='pl40r pr40r fs30r b' id="qsBox"></div> <!--题目的盒子-->
+        </div>
+      </div>
+    </div>
+    <!--全部答对-->
+    <div class='abs zx1000 trbl0 maskbg tc dn' id="resultBox">
+      <img id="successBox" class='rds30r w70 bounceInDown dn' style="margin-top:35%;" src="./imgs/successBox.png" />
+      <img id="errorBox" class='rds30r w70 scaleError dn' style="margin-top:35%;" src="./imgs/errorBox.png" />
+    </div>
+    <!--为了兼容ios模拟固定定位,弹窗用作提示信息-->
+    <div class='abs zx1000 trbl0 maskbg dn' id="messageBox">
+      <div class='abs l50 tx-50 bgf w60 rds30r p30r' style="top:30%;">
+        <div class='pt20r pb20r tc'>
+          <!--对勾-->
+          <svg id="msgBox-success" class="g52c41a dn" style="width:1rem; height:1rem;" viewBox="64 64 896 896" data-icon="check-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"></path></svg>
+          <!--感叹号-->
+          <svg id="msgBox-info" class='g1890ff dn' style="width:1rem; height:1rem;" viewBox="64 64 896 896" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm-32 232c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V296zm32 440a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"></path></svg>
+          <!--叉号-->
+          <svg id="msgBox-error" class="gf5222d dn" style="width:1rem; height:1rem;" viewBox="64 64 896 896" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 0 1-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"></path></svg>
+        </div>
+        <div class='fs40r f xc ac pt20r pb20r' id="message"></div>
+      </div>
+    </div>
+    <!-- jsdk -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/func.js"></script>
+    <script src="./js/question.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
